@@ -39,16 +39,42 @@ int main(int argc, const char * argv[]) {
     
     
 // ------------浮点--------------------
-    float a=3.0;
-//    4字节
-    double b=3.0;
-//    8字节
-    long double c=3.0;
-//    16字节
-    printf("a=%f,b=%f,c=%Lf\n",a,b,c);
-//    a=3.000000,b=3.000000,c=3.000000
-    printf("a=%f,b=%f,c=%f\n",a,b,c);
-//    a=3.000000,b=3.000000,c=0.500000
+//    float a=3.0;
+////    4字节
+//    double b=3.0;
+////    8字节
+//    long double c=3.0;
+////    16字节
+//    printf("a=%f,b=%f,c=%Lf\n",a,b,c);
+////    a=3.000000,b=3.000000,c=3.000000
+//    printf("a=%f,b=%f,c=%f\n",a,b,c);
+////    a=3.000000,b=3.000000,c=0.500000
+    
+ // ------------字符--------------------
+        printf("hello\nworld\n");
+        printf("hello\rworld\n");
+//    回车符
+        printf("hello\bworld\n");
+//    回退符
+        printf("hello\tworld\n");
+//    制表符
+    
+//    hello
+//    world
+//    world
+//    hellworld
+//    hello    world
+    
+      printf("length of char %d\n",sizeof(char));
+//    字符为一个字节
+    char ch='a';
+     printf("char %d\n",ch);
+     printf("char %c\n",ch);
+     printf("char %c\n",ch-32);
+//    char 97
+//    char a
+//    char A
+     printf("char %s\n","aaaa");
     return 0;
 }
 
