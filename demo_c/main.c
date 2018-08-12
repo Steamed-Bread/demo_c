@@ -117,22 +117,51 @@ int main(int argc, const char * argv[]) {
 
     
   // ------------goto label--------------------
-    int g=0;
-    g++;
-    if (g<100) {
-        goto label1;
-    }
-
-    label:
-    printf("%d\n",g);
-    printf("%d\n",g);
+//    int g=0;
+//    g++;
+//    if (g<100) {
+//        goto label1;
+//    }
+//
+//    label:
+//    printf("%d\n",g);
+//    printf("%d\n",g);
+//
+//    label1:
+//    printf("%d\n",g);
+//    printf("%d\n",g);
     
-    label1:
-    printf("%d\n",g);
-    printf("%d\n",g);
+   // ------------for--------------------
+//    for (int i=1; i<=9; i++) {
+//        for (int j=1; j<=i; j++) {
+//            if (i*j==5) {
+////                goto end;
+////                continue;
+//                //不跳出循环，重新开始循环
+////                break;
+//                //跳出循环
+//            }
+//            printf("%d*%d=%d\t",i,j,i*j);
+//        }
+//        printf("\n");
+//
+//    }
+//    end:
+//    printf("\n");
     
-
-   
+    
+    // ------------while do while --------------------
+//    int w=1;
+//    while (w<1) {
+//        printf("w=%d\n",w);
+//        w++;
+//    }
+//    
+//    do{
+//        printf("w=%d\n",w);
+//        w++;
+//    }while (w<1);
+    return 0;
 }
 
 
