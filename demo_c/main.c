@@ -13,6 +13,7 @@
 #define DOWN 2
 #define LEFT 3
 #define RIGHT 4
+#define EXIT_SUCCESS 1
 //编译时
 const int i=10000;
 //运行时
@@ -156,12 +157,63 @@ int main(int argc, const char * argv[]) {
 //        printf("w=%d\n",w);
 //        w++;
 //    }
-//    
+//
 //    do{
 //        printf("w=%d\n",w);
 //        w++;
 //    }while (w<1);
-    return 0;
+
+// ------------输入输出 --------------------
+//    putchar(65);
+//    输出对应值得字符
+//   char ps[]="hello";
+//    puts(ps);
+//    输出字符串
+//    puts("input a char");
+//    char input=getchar();
+//    输入单个字符
+//    char input;
+//    scanf("%c",&input);
+////    传入地址
+//    printf("input is %c\n",input);
+//    int input;
+//    scanf("%d",&input);
+//    //    传入地址
+//    printf("input is %d\n",input);
+    
+// ------------数组 --------------------
+//    int a=1;
+//    变量必须初始化
+//    int len=10,arr[len],arr1[]={1,2,3,4,5};
+//    数组可以不初始化，但是输出的值会出现错误
+//    int length = sizeof(arr1) / sizeof(int);
+//    计算数组长度
+//    for (int i=0; i<length; i++) {
+//         printf("%d\n",arr[i]);
+//    }
+//    printf("%d\n",a);
+//    char input[10]={'H','E','\0','L'};
+////    一个字符一字节
+//    int i=1;
+////    整形四字节
+////    碰到\0表示数组结束
+//    printf("%d\n",strlen(input));
+//     printf("%d\n",sizeof(input));
+////    不管是否填充满，字节数大小不变
+//    printf("%s\n",input);
+//    for (int i=0;i<strlen(input); i++) {
+//          printf("%c\n",input[i]);
+//    }
+  
+// ------------指针 --------------------
+    int a=10;
+    int arr[]={1,2,3};
+    int *p=&a;
+    int (*q)[3]=&arr;
+//    *p=11;
+    printf("p is %d\n",*p);
+    printf("q is %d\n",*q);
+    return EXIT_SUCCESS;
 }
 
 
