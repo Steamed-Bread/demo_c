@@ -5,15 +5,15 @@
 //  Created by 徐星 on 2018/8/11.
 //  Copyright © 2018年 徐星. All rights reserved.
 //
-
 #include <stdio.h>
+#include <stdlib.h>
+#include "demo.h"
 //常量定义 一般为大写
 #define MY_AGE 100
 #define UP 1
 #define DOWN 2
 #define LEFT 3
 #define RIGHT 4
-#define EXIT_SUCCESS 1
 //编译时
 const int i=10000;
 //运行时
@@ -206,13 +206,20 @@ int main(int argc, const char * argv[]) {
 //    }
   
 // ------------指针 --------------------
-    int a=10;
-    int arr[]={1,2,3};
-    int *p=&a;
-    int (*q)[3]=&arr;
-//    *p=11;
-    printf("p is %d\n",*p);
-    printf("q is %d\n",*q);
+//    int a=10;
+//    int arr[]={1,4,3};
+//    int *p=&a;
+//    int *q=&arr;
+////    *p=11;
+//    printf("q is %d\n",*q+1);
+//    printf("q is %d\n",*(q+1));
+    
+//    int *array=malloc(10);
+//    array[0]=11;
+//    free(array);
+////    释放内存只代表该处内存可以被其他使用，但是资源未被释放
+//    printf("array is %d\n",*array);
+    test();
     return EXIT_SUCCESS;
 }
 
